@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成输出</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>生成输出</h1>
+    <input type="text" id="inputText" placeholder="请输入指令">
+    <button onclick="generateOutput()">提交</button>
+    <div class="output" id="output"></div>
+
+    <script>
+        function generateOutput() {
+            const inputString = document.getElementById("inputText").value;
+            let output = "";
+
+            if (inputString === "瓜" || inputString === "许沐雯") {
+                output = "小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生小学生";
+            } else {
+                output = "输入无效";
+            }
+
+            document.getElementById("output").innerText = output;
+        }
+    </script>
+</body>
+</html>
